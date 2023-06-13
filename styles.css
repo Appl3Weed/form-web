@@ -1,0 +1,419 @@
+
+@font-face {
+  font-family: 'MiFuentePersonalizada';
+  src: url('fonts/Milky\ Lemon.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+  }
+  
+ 
+  .logo img {
+    height: 80px; 
+    height: 80px;
+  }
+  
+
+  nav {
+    display: flex;
+    flex-direction: row; 
+    
+  }
+  
+  .nav-links  {
+    list-style: none;
+    margin-right: 10px; 
+  }
+  
+  .nav-links a {
+    color: #74A558;
+    text-decoration: none;
+    margin: 6px;
+    font-family: 'Font Name', sans-serif;
+    /* Otros estilos de botón */
+    position: relative;
+    transition: all 0.3s;
+  }
+  .nav-links a :hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-links a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -6PX;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #74A558; /* Cambia el color a tu gusto */
+    transition: all 0.3s;
+  }
+  
+ 
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #74A558;
+    margin: 5px;
+  }
+  .banner {
+    position: relative;
+    left: 330px;
+    width: 700px;
+    height: 480px;
+  }
+
+  .imagenFondo{
+    background-image: url("material\ grafico/patron.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 10px rgba(0.5, 0.5, 0.5, 0.5);
+  }
+  .imagenfondoEmpleo{
+    background-image: url("material\ grafico/banner.jpg");
+    background-size: cover;
+    background-position: 100% 0px;  /* Ajusta la posición aquí */
+    background-repeat: no-repeat;
+    position: relative;
+    top: -60px;
+    box-shadow: 10px 10px 10px rgba(0.5, 0.5, 0.5, 0.5);
+    box-shadow: 10px 10px 10px rgba(0.5, 0.5, 0.5, 0.5);
+    
+  }
+  
+  .banner img {
+    border-radius:10px ;
+    margin-top: 15px;
+    width: 700px;
+    height: auto;
+    transition: filter 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .banner:hover img,
+.banner-content .btn:hover ~ img {
+  filter: brightness( 0.35); /* Cambiamos el brillo al oscurecer la imagen */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  box-shadow: #333;
+}
+
+.banner-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Cambiamos el fondo del botón a transparente */
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 10px 10px 10px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+
+  
+  .banner-content {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .banner-content h2 {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Font Name', sans-serif;
+  }
+  
+  .banner-content p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: bold;
+    font-family: 'Font Name', sans-serif;
+  }
+  
+  
+  .banner-content .btn {
+    font-family: 'Font Name', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: bold;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  body {
+    background-color: #f1f1f1; /* Color de fondo de la página */
+  }
+  
+  .contenedor {
+    font-family: 'Font Name', sans-serif;
+    width: 400px;
+    margin: 80px auto; /* Margen superior e inferior de 20px, y centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px; /* Espaciado inferior para las etiquetas */
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="file"] {
+    margin-top: 12px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Color de fondo del botón al pasar el cursor */
+  }
+  
+  .alerta {
+    margin-top: 12px;
+    padding: 8px;
+    background-color: #f44336; /* Color de fondo de la alerta */
+    color: #fff; /* Color de texto de la alerta */
+    border-radius: 4px;
+  }
+  
+  /* Estilos específicos para el campo de nacionalidad y certificado de empleo */
+  #nacionalidad,
+  #certificado-empleo {
+    display: none;
+  }
+  
+  #nacionalidad.mostrar,
+  #certificado-empleo.mostrar {
+    display: block;
+  }
+  .form {
+    margin-top: 60px;
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    padding-right: 4%;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #4CAF50;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #4CAF50;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #4CAF50;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #4CAF50;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline #4CAF50;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #4CAF50;
+  }
+  .result{
+    color: #4CAF50;
+    font-family: 'Font Name', sans-serif;
+    font-size: 15px;
+  }
+
+  
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  .gender-selector label {
+    color: rgba(88, 87, 87, 0.822);
+  }
+  .age-selector{
+    color: rgba(88, 87, 87, 0.822);
+  }
+  .gender-selector select {
+    color: rgba(88, 87, 87, 0.822);
+  }
+  .nationality-selector{
+    color: rgba(88, 87, 87, 0.822);
+  }
+  .nationality-selector select{
+    color: rgba(88, 87, 87, 0.822);
+  }
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    .nav-links {
+      display: none;
+    }
+    .banner-content{
+      display: none;
+    }
+    .banner img{
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="material grafico/logox.png" type="image/png">
+    <title>Empleo | Vacantes Abiertas </title>
+    <script src="javascript.js"></script>  
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html"><img src="material grafico/EcoSofa-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <a href="#">INICIO</a>
+        <a href="#">INFORMACIÓN</a>
+        <a href="#">EMPLEO</a>
+        <a href="#">CONOCE RECICLATOWN</a>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </header>
+</div>
+<div class="imagenfondoEmpleo">
+<form class="form">
+  <p class="title">Registro </p>
+  <p class="message">Registro para ingresar a Reciclatown.</p>
+      <div class="flex">
+      <label>
+          <input required="" placeholder="" type="text" class="input">
+          <span>Nombres</span>
+      </label>
+
+      <label>
+          <input required="" placeholder="" type="text" class="input">
+          <span>Apellidos</span>
+      </label>
+  </div>  
+          
+  <label>
+      <input required="" placeholder="" type="number" class="input">
+      <span>Número de Documento</span>
+  </label> 
+      
+  <label>
+      <input id="estrato" required="" placeholder="" type="number" class="input">
+      <span>Estrato</span>
+  </label>
+  <div class="gender-selector">
+    <label for="gender-select">Género:</label>
+    <select id="gender-select">
+      <option value="">Selecciona un género</option>
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+    </select>
+  </div>
+  <div class="age-selector">
+    <label for="age-input">Edad:</label>
+    <input type="number" id="age-input" placeholder="Ingresa tu edad">
+  </div>
+  
+  <div class="nationality-selector">
+    <label for="nationality-select">Nacionalidad:</label>
+    <select id="nationality-select">
+      <option value="">Selecciona una nacionalidad</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Brasil">Brasil</option>
+      <option value="Chile">Chile</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="Guyana">Guyana</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Perú">Perú</option>
+      <option value="Surinam">Surinam</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Venezuela">Venezuela</option>
+    </select>
+  </div>
+  <div class="result" id="result"></div>
+  
+  <button class="submit">Aplicar</button>
+
+</form>
+</div>
+   
+</body>
+</html>
